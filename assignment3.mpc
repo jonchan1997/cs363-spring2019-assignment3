@@ -1,0 +1,28 @@
+project (assignment3) {
+  exename = assignment3
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    driver.cpp
+  }
+
+  Template_Files {
+	Base_Array.cpp
+	Array.cpp
+	Stack.cpp
+	Expr_Command.cpp
+  Num_Command.cpp
+	Binary_Op_Command.cpp
+	Add_Command.cpp
+	Subtract_Command.cpp
+	Multiply_Command.cpp
+	Divide_Command.cpp
+  Expr_Command_Factory.cpp
+  Stack_Command_Factory.cpp
+  Calculator.cpp
+  }
+}
